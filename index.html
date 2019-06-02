@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:site_name" content="Maclaughlin Grain"/>
+	<meta property="og:title" content="Maclaughlin Grain" />
+	<meta property="og:description" content="" />
+
+	<!-- base -->
+	<base href="/">
+
+	<!-- title -->
+	<title>Maclaughlin Grain</title>
+
+	<!-- links -->
+	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- scripts -->
+	<script type="text/javascript" src="./redirect.js"></script>
+	<script type="text/javascript">recieveRedirect()</script>
+</head>
+<body>
+	<header id="navbar">
+		<div class="container">
+			<a id="nav-logo" class="logo" href="#" onclick="_redirect('/', 0); return false;"><img src="./assets/logo.png" alt="logo"></a>
+			
+			<div id="navbar-mobile">
+				<div class="nav-toggle">
+					<div class="nav-toggle-bar"></div>
+				</div><!-- /nav-toggle -->
+
+				<nav id="navbar-mobile" class="nav">
+					<ul class="nav-list">
+						<li><a href="#" onclick="_redirect('/', 0); _toggleHamburger(); return false;">Shop</a></li>
+						<li><a href="#" onclick="_redirect('/about', 1); _toggleHamburger(); return false;">About</a></li>
+						<li><a href="#" onclick="_redirect('/contact', 2); _toggleHamburger(); return false;">Contact</a></li>
+					</ul>
+				</nav><!-- /nav -->
+			</div><!-- /navbar-mobile -->
+
+			<div id="navbar-desktop">
+				<nav>
+					<ul class="nav-list">
+						<li><a href="#" onclick="_redirect('/', 0); return false;">Shop</a></li>
+						<li><a href="#" onclick="_redirect('/about', 1); return false;">About</a></li>
+						<li><a href="#" onclick="_redirect('/contact', 2); return false;">Contact</a></li>
+					</ul>
+				</nav>
+			</div><!-- /navbar-desktop -->
+		</div><!-- /container -->
+	</header><!-- /navbar -->
+	
+	<!-- main content -->
+	<div id="content"></div>
+	
+	<footer>
+		<div class="container">
+			<ul class="social">
+				<li><a href="https://www.instagram.com/maclaughlingrain/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+			</ul><!-- /social -->
+
+			<div class="footer-middle">
+				<p><script>document.write(new Date().getFullYear());</script> Maclaughlin Grain. All rights resevered.</p>
+				<br>
+				<p><a href="#" onclick="_redirect('/contact', 2); return false;">robertdcmac@gmail.com</a></p>
+			</div><!-- /footer-middle -->
+		</div><!-- /container -->
+	</footer><!-- /footer -->
+	
+	<!-- scripts -->
+	<!-- pages -->
+	<script src="./app.js"></script>
+	<script type="text/javascript" src="./js/pages/shop.js"></script>
+	<script type="text/javascript" src="./js/pages/about.js"></script>
+	<script type="text/javascript" src="./js/pages/contact.js"></script>
+	<script type="text/javascript" src="./js/pages/login.js"></script>
+	<script type="text/javascript" src="./js/pages/admin.js"></script>
+	<script src="js/router.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

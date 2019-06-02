@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: calc(100% - 150px); // account for .main push down under header!
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+	transition: opacity 0.2s ease-in-out;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+
+.hide-overflow {
+	overflow: hidden;
+}
+
+.hide-tag {
+	display: none;
+}
+
+.float-left {
+	float: left !important;
+}
+
+.float-right {
+	float: right !important;
+}
+
+.center-vertically {
+	@include center-vertically;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.push-down-small {
+	padding-bottom: 50px;
+}
+
+.push-down {
+	padding-top: 100px;
+}
+
+@media(min-width: $md-pre) {
+	.push-down {
+		padding-top: 200px;
+	}
+}

@@ -1,0 +1,63 @@
+{
+    "response": {
+        "count": 4,
+        "products": [
+            {
+                "product": {
+                    "description": "This is a Whale",
+                    "_id": "5ce9f13ee4247b1247097a17",
+                    "name": "Whale",
+                    "price": "12.00",
+                    "productImage": "./assets/sample/whale.png"
+                },
+                "request": {
+                    "type": "GET",
+                    "message": "get this product",
+                    "url": "http://localhost:3000/products/5ce9f13ee4247b1247097a17"
+                }
+            },
+            {
+                "product": {
+                    "description": "This is a Giant Sword",
+                    "_id": "5ce9f178e4247b1247097a19",
+                    "name": "Giant Sword",
+                    "price": "230.00",
+                    "productImage": "./assets/sample/giant-sword.png"
+                },
+                "request": {
+                    "type": "GET",
+                    "message": "get this product",
+                    "url": "http://localhost:3000/products/5ce9f178e4247b1247097a19"
+                }
+            },
+            {
+                "product": {
+                    "description": "This is an energy sword",
+                    "_id": "5ce9f1bde4247b1247097a1b",
+                    "name": "Energy Sword",
+                    "price": "1250.00",
+                    "productImage": "./assets/sample/energy-sword.png"
+                },
+                "request": {
+                    "type": "GET",
+                    "message": "get this product",
+                    "url": "./assets/sample/5ce9f1bde4247b1247097a1b"
+                }
+            },
+            {
+                "product": {
+                    "description": "This is an energy sword",
+                    "_id": "5ce9f2e4f70a36127c666bcd",
+                    "name": "Energy Sword2",
+                    "price": "1250.01",
+                    "productImage": "./assets/sample/energy-sword.png"
+                },
+                "request": {
+                    "type": "GET",
+                    "message": "get this product",
+                    "url": "http://localhost:3000/products/5ce9f2e4f70a36127c666bcd"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,152 @@
+.black {
+	color: $black;
+}
+
+// navbar
+#navbar {
+	background-color: $white;
+	height: 150px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1; // keyframes messes this up
+
+	img {
+		@include undraggable-img;
+		height: 80px;
+		margin-top: 30px;
+	}
+	::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	.logo {
+		float: left;
+	}
+
+	a {
+		color: $turquoise;
+	}
+
+	.current-page {
+		text-decoration: underline;
+		color: $black !important;
+	}
+}
+
+// desktop navbar
+#navbar-desktop {
+	nav {
+		float: right;
+
+		ul {
+			margin: 0;
+			padding-top: 75px - 16px;
+		}
+
+		li {
+			font-size: 24px;
+			display: inline-block;
+			margin-left: 50px;
+		}
+	}
+}
+
+// mobile navbar
+#navbar-mobile {
+	.nav-toggle {
+		@include user-select;
+		cursor: pointer;
+		height: 5 * $nav-toggle-bar-height;
+		right: 2rem;
+		position: fixed;
+		top: 3.5rem;
+		width: $nav-toggle-bar-width;
+		z-index: $z-nav-toggle;
+	  &:hover { opacity: 0.8; }
+
+		.nav-toggle-bar,
+		.nav-toggle-bar::after,
+		.nav-toggle-bar::before {
+			@include center-vertically;
+			@include transition(all 0.5s ease);
+			background: $nav-toggle-bar-color;
+			content: '';
+			height: $nav-toggle-bar-height;
+			width: 100%;
+		}
+		.nav-toggle-bar { margin-top: 0; }
+		.nav-toggle-bar::after { margin-top: 2 * $nav-toggle-bar-height; }
+		.nav-toggle-bar::before { margin-top: -2 * $nav-toggle-bar-height; }
+		&.expanded .nav-toggle-bar { background: transparent; }
+		&.expanded .nav-toggle-bar::after,
+		&.expanded .nav-toggle-bar::before {
+			background: $nav-color;
+			margin-top: 0;
+		}
+		&.expanded .nav-toggle-bar::after { @include transform(rotate(45deg)); }
+		&.expanded .nav-toggle-bar::before { @include transform(rotate(-45deg)); }
+	}
+
+	@media(min-width: $sm) {
+		.nav-toggle {
+			right: 5rem;
+		}
+	}
+
+	// nav
+	.nav {
+		@include transition(right 0.5s ease);
+		background: $nav-background;
+		color: $nav-color;
+	  	cursor: pointer;
+		font-size: 2rem;
+		height: 100vh;
+		right: -$nav-width;
+		padding: 6rem 2rem 2rem -2rem;
+		position: fixed;
+		top: 0;
+		width: $nav-width;
+		z-index: $z-nav;
+		&.expanded {
+			right: 0;
+			padding-right: 2rem;
+			-webkit-box-shadow: -1px 0px 10px 0px $lt-lt-black ;
+		}
+
+		ul {
+			@include center-vertically;
+			list-style: none;
+			margin: 0 0 0 50px;
+			padding: 0;
+		}
+	}
+}
+
+// change between normal menu and hamburger menu
+@media(min-width: $md-pre) {
+	#navbar-mobile {
+		display: none;
+	}
+}
+
+@media(max-width: $md-pre) {
+	#navbar-desktop {
+		display: none;
+	}
+}
+
+
+// wrapped around rest of content to push under navbar
+#content {
+	margin-top: $navbar-h;
+	margin-bottom: 75px;
+	//padding-bottom: $footer-h;
+	min-height: calc(100vh - 400px); // $footer-h does not work here!
+	overflow: auto;
+}
+
+.disable-click {
+	pointer-events: none;
+}

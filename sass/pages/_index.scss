@@ -1,0 +1,56 @@
+// product
+.product {
+	transition: all 0.1s linear;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 25px;
+
+	img {
+		@include undraggable-img;
+		width: 100%;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.price {
+		float: right;
+	}
+
+	&:hover {
+        @include product-hover;
+        cursor: pointer;
+    }
+}
+
+.loading {
+	text-align: center;
+	padding-top: 20%;
+}
+
+.fade-in {
+	opacity: 0; // animation on fade-in
+}
+
+.product.is-visible {
+	animation: Items 600ms ease-in forwards;
+}
+
+.product.show-product {
+	opacity: 1;
+}
+
+#nav-logo:hover {
+	opacity: 1;
+}
+
+@keyframes Items {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

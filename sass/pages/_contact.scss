@@ -1,0 +1,42 @@
+.contact {
+
+	img {
+		width: 100%;
+	}
+
+	h1 {
+		padding-top: 50px;
+		text-decoration: underline;
+		font-size: 3em;
+	}
+
+	p {
+		padding-top: 25px;
+		line-height: 30px;
+	}
+
+	.box-info {
+		margin-bottom: 50px;
+	}
+}
+@media(min-width: $md-pre) {
+	.contact {
+		.box-info {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media(min-width: $md-pre) {
+	.contact {
+		.box-info {
+			float: left;
+		}
+		
+		.box-form {
+			margin-top: 50px;
+			width: 60%;
+			float: right;
+		}
+	}
+}

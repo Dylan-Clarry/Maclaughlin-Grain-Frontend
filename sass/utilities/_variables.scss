@@ -1,0 +1,45 @@
+//fonts
+$font-hx: 'Alegreya', serif;
+$font-body: 'Alegreya', serif;
+
+//colours
+$white: #fff;
+$lt-lt-black: #666; // evil!
+$lt-black: #333;
+$black: #000;
+$blue: #0047b3;
+$lt-grey: #f2f2f2;
+$grey: #d3d3d3;
+$turquoise: #40E0D0;
+$dk-red: #b30000;
+$red: #e60000;
+$dk-mustard: #ffb158;
+$mustard: #ffdb58;
+$lt-green: #85e085;
+
+
+// breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// preemtive breakpoints
+$sm-pre: 676px;
+$md-pre: 868px;
+$lg-pre: 1092px;
+$xl-pre: 1300px;
+
+// navbar and footer sizes
+$navbar-h: 150px;
+$footer-h: 200px;
+
+// navbar mobile
+$nav-toggle-bar-color: $black;
+$nav-toggle-bar-height: 0.25rem;
+$nav-toggle-bar-width: 2rem;
+$nav-background: $white;
+$nav-color: $turquoise; // "X" colour
+$nav-width: 15rem;
+$z-nav-toggle: 2;
+$z-nav: 1;

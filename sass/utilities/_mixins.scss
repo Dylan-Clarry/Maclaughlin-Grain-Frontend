@@ -1,0 +1,67 @@
+@mixin box-sizing($box-sizing: border-box) {
+	-webkit-box-sizing: $box-sizing;
+	-moz-box-sizing: $box-sizing;
+	box-sizing: $box-sizing;
+}
+
+@mixin center-vertically($position: absolute) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin text-size-adjust {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+@mixin transform($transform) {
+	-ms-transform: $transform;
+	-webkit-transform: $transform;
+	transform: $transform;
+}
+
+@mixin transition($parameters: all 0.5s ease) {
+	-webkit-transition: $parameters;
+	-moz-transition: $parameters;
+	-ms-transition: $parameters;
+	-o-transition: $parameters;
+	transition: $parameters;
+}
+
+@mixin user-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+// undraggable image
+@mixin undraggable-img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+// undo mobile forms
+@mixin disable-mobile-rounding {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+
+// product div hover
+@mixin product-hover {
+	transform: scale(1.015);
+	-webkit-transform: scale(1.015);
+    -moz-transform: scale(1.015);
+    -o-transform: scale(1.015);
+    -webkit-box-shadow:rgba(0,0,0,0.1) 0px 5px 15px;
+    -moz-box-shadow:rgba(0,0,0,0.1) 0px 5px 15px;
+    -o-box-shadow:rgba(0,0,0,0.1) 0px 5px 15px;
+    box-shadow:rgba(0,0,0,0.1) 0px 5px 15px;
+}

@@ -1,0 +1,45 @@
+.about {
+	margin-top: 100px;
+
+	img {
+		@include undraggable-img;
+		width: 100%;
+	}
+
+	h1 {
+		padding-top: 50px;
+		text-decoration: underline;
+		font-size: 3em;
+	}
+
+	p {
+		padding-top: 25px;
+		line-height: 30px;
+	}
+}
+
+@media(min-width: $md-pre) {
+	.about {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+
+		.box-logo {
+			grid-column-start: 2;
+			grid-column-end: 4;
+		}
+
+		.box-header {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 1;
+		}
+
+		.box-bio {
+			max-width: 80%;
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+		}
+	}
+	
+}

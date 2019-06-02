@@ -1,0 +1,20 @@
+.grid {
+	padding-bottom: 50px; // product hover causes overflow on bottom
+}
+
+// small screen size
+@media(min-width: $md-pre) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 50px;
+	}	
+}
+
+// medium screen size
+@media(min-width: $lg-pre) {
+	.grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 50px;
+	}	
+}

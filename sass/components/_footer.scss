@@ -1,0 +1,50 @@
+footer {
+	height: $footer-h;
+	width: 100%;
+	background-color: $lt-black;
+	//margin-top: -$footer-h;
+
+	ul {
+		list-style: none;
+		text-align: center;
+		margin-left: -30px;
+		padding-top: 35px;
+
+		li {
+			display: inline-block;
+			margin-left: 30px;
+		}
+
+		i {
+			font-size: 30px;
+			color: $white;
+		}
+	}
+
+	.footer-middle {
+		padding-top: 25px;
+
+		a, p {
+			text-align: center;
+			color: $white;
+		}
+	}
+}
+
+@media(min-width: $sm) {
+	footer {
+		ul {
+			float: left;
+			padding-top: 80px;
+		}
+
+		.footer-middle {
+			padding-top: 75px;
+			padding-bottom: 0;
+			p {
+				float: right;
+				text-align: right;
+			}
+		}
+	}
+}

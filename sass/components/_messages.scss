@@ -1,0 +1,27 @@
+.message {
+	text-align: center;
+	color: $white;
+	background-color: $turquoise;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+}
+
+#login-failed {
+	background-color: $red;
+	margin-bottom: 15px;
+	height: 40px;
+	width: 100%;
+}
+
+.form-validation {
+	background-color: $dk-red;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 20px;
+	width: 100%;
+}
+
+#crud-action {
+	background-color: $lt-green;
+}

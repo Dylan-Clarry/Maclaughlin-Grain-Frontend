@@ -1,0 +1,34 @@
+// default small
+.container {
+	max-width: $sm;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+// add margins on side when really small
+@media(max-width: $sm) {
+	.container {
+		margin: 0 5%;
+	}
+}
+
+// medium size
+@media(min-width: $md-pre) {
+	.container {
+		max-width: $md;
+	}
+}
+
+// large size
+@media(min-width: $lg-pre) {
+	.container {
+		max-width: $lg;
+	}
+}
+
+// extra large size
+// @media(min-width: $xl + 100px) {
+// 	.container {
+// 		max-width: $xl;
+// 	}
+// }
