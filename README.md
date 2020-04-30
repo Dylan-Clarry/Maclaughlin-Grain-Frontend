@@ -1,1 +1,1 @@
-# Maclaughlin-Grain-Frontend
+# Vanilla JS Online Store
